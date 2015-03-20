@@ -10,6 +10,6 @@ public class IndexController {
 	
 	@RequestMapping("/index")
 	public String index(Model model) {
-	  return "index";
+	  return "/WEB-INF/jsp/index.jsp";
 	}
 }
