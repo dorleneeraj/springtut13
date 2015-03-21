@@ -12,11 +12,17 @@ public class IndexController {
 
     public static final Log log = LogFactory.getLog(IndexController.class);
 
-    //    @RequestMapping(value = "/index")
+    //    a shortcut for: @RequestMapping(value = "/index")
     @RequestMapping("/index")
     public String index(Model model) {
         log.debug("controller:index in");
         return "/WEB-INF/jsp/index.jsp"; // returns the location of the view template: our JSP page
+    }
+    //    a shortcut for: @RequestMapping(value = "/")
+    @RequestMapping("/")
+    public String home(Model model) {
+        log.debug("controller:index in");
+        return "default.jsp"; // returns the location of the view template: our JSP page
     }
 }
 
